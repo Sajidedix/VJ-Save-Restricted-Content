@@ -31,9 +31,9 @@ async def verupikkals(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
     if not b_msg:
-        return await message.reply_text("**Reply This Command To Your Broadcast Message**")
+        return await message.reply_text("**ʀᴇᴘʟʏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴇssᴀɢᴇ**")
     sts = await message.reply_text(
-        text='Broadcasting your messages...'
+        text='ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ʏᴏᴜʀ ᴍᴇssᴀɢᴇs...'
     )
     start_time = time.time()
     total_users = await db.total_users_count()
